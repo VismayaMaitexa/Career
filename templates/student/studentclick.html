@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style>
+    body {
+      background-image: url("{% static 'image/image3.jpg' %}");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    .jumbotron {
+      background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+      padding: 50px;
+      border-radius: 15px;
+      text-align: center;
+      margin: 50px auto;
+      width: 80%;
+      max-width: 800px;
+      box-shadow: 0 8px 15px rgba(198, 191, 191, 0.3);
+    }
+
+    .jumbotron h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #c0b3b6, #e6dbd9); /* Gradient color for heading */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .jumbotron p.lead {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #dcdcdc;
+    }
+
+    .btn {
+      font-size: 1.2em;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: linear-gradient(45deg, #007bff, #00c6ff);
+      border: none;
+      color: white;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(45deg, #0056b3, #0084cc);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 0;
+      text-align: center;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome User</h1>
+    <p class="lead">Join us to start your journey towards success.</p>
+    <p>
+      <a class="btn btn-primary" href="studentsignup" role="button">Create Your Account</a>
+      <a class="btn btn-primary" href="studentlogin" role="button">Login</a>
+    </p>
+  </div>
+
+  
+</body>
+
+</html>
